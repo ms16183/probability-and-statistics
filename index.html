@@ -26,6 +26,8 @@
 <ul>
 <li><a href="#確率の定義">確率の定義</a></li>
 <li><a href="#確率の基本性質">確率の基本性質</a></li>
+<li><a href="#期待値">期待値</a></li>
+<li><a href="#分散">分散</a></li>
 </ul>
 </nav>
 <h1 id="確率の定義">確率の定義</h1>
@@ -47,5 +49,18 @@
 <li><span class="math inline">\(P(\Omega) = 1\)</span>, <span class="math inline">\(P(\phi) = 0\)</span></li>
 <li>事象<span class="math inline">\(A\)</span>と事象<span class="math inline">\(B\)</span>が互いに排反である時<span class="math inline">\(P(A \cup B) = P(A) + P(B)\)</span></li>
 </ol>
+<h1 id="期待値">期待値</h1>
+<p>試行の結果によって得られる実現値<span class="math inline">\(x_1, x_2, ..., x_n\)</span>に対して各値をとる確率が<span class="math inline">\(p_1, p_2, ..., p_n\)</span>の時，</p>
+<p><span class="math display">\[ E[X] = \sum_{i=1}^{n} x_i p_i = \mu \]</span></p>
+<p>を<strong><span class="math inline">\(X\)</span>の期待値(平均)</strong>という．</p>
+<p>例えば，サイコロを振った時に出る目の期待値は</p>
+<p><span class="math display">\[ E[x] = 1 \times \frac{1}{6} + 2 \times \frac{1}{6} + 3 \times \frac{1}{6} + 4 \times \frac{1}{6} + 5 \times \frac{1}{6} + 6 \times \frac{1}{6}
+        = 3.5
+\]</span></p>
+<p>である．</p>
+<h1 id="分散">分散</h1>
+<p>平均<span class="math inline">\(\mu\)</span>について実現値<span class="math inline">\(x_1, x_2, ..., x_n\)</span>の時に，</p>
+<p><span class="math display">\[ V[X] = E[(X-\mu)^2]= \sum_{i=1}^{n} (x_i-\mu)^2 p_i = E[X^2] - E[X]^2 \]</span></p>
+<p>を<strong><span class="math inline">\(X\)</span>の分散</strong>と呼ぶ．</p>
 </body>
 </html>
