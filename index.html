@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>確率・統計</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">確率・統計</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#確率の定義">確率の定義</a></li>
+<li><a href="#確率の基本性質">確率の基本性質</a></li>
+</ul>
+</nav>
+<h1 id="確率の定義">確率の定義</h1>
+<p><strong>確率</strong>とは，ある現象の起こりやすさを数値で表したものである． ある実験や観測(サイコロを振る，コインを投げる，箱の中から白玉を取り出すetc)の試行を繰り返し，その結果を事象と呼ぶ． さらに，これ以上分割できない事象を根本事象と呼ぶ．例えばサイコロを振った場合，「奇数の目が出る」，「5以上の目が出る」 のような様々な事象があるが根本事象の場合「1の目が出る」，「2の目が出る」，…，「6の目が出る」の6つである．</p>
+<p>根本事象が<span class="math inline">\(N\)</span>通りあり，とある事象<span class="math inline">\(A\)</span>が<span class="math inline">\(n(A)\)</span>通りの根本事象からなる時に確率を<span class="math inline">\(P(A)\)</span>のように表し，</p>
+<p><span class="math display">\[ P(A) = \frac{n(A)}{N} \]</span></p>
+<p>と定義される．</p>
+<p>例えば，サイコロを振った場合に奇数の目が出る確率を考える，根本事象は「1の目が出る」，「2の目が出る」，…，「6の目が出る」の6通りである． 奇数の目が出るという事象は「1の目が出る」，「3の目が出る」，「5の目が出る」の3通りの根本事象からなる．これを定義式に当てはめると</p>
+<p><span class="math display">\[ P(奇数の目が出る確率) = \frac{3}{6} = 0.5 \]</span></p>
+<h1 id="確率の基本性質">確率の基本性質</h1>
+<p>全ての根本事象の集合を<strong>全事象</strong>という．つまり，事象は必ず全事象の部分集合となる．これは<span class="math inline">\(\Omega\)</span>と表す．</p>
+<p>ある事象<span class="math inline">\(A\)</span>と，ある事象<span class="math inline">\(B\)</span>が共に起きる事象を<strong>積事象</strong>という．これは<span class="math inline">\(A \cap B\)</span>と表す．</p>
+<p>ある事象<span class="math inline">\(A\)</span>と，ある事象<span class="math inline">\(B\)</span>がどちらか或いは共に起きる事象を<strong>和事象</strong>という．これは<span class="math inline">\(A \cup B\)</span>と表す．</p>
+<p>ある事象<span class="math inline">\(A\)</span>が起こらない事象を<strong>余事象</strong>という．これは<span class="math inline">\(\overline{A}\)</span>と表す．</p>
+<p>決して起こらないことも事象であり，これを<strong>空事象</strong>という．これは<span class="math inline">\(\phi\)</span>で表す．</p>
+<p>コルモゴロフの公理と呼ばれる，確率の公理がある．</p>
+<ol type="1">
+<li>任意の事象<span class="math inline">\(A\)</span>に対して <span class="math inline">\(0 \leq P(A) \leq 1\)</span></li>
+<li><span class="math inline">\(P(\Omega) = 1\)</span>, <span class="math inline">\(P(\phi) = 0\)</span></li>
+<li>事象<span class="math inline">\(A\)</span>と事象<span class="math inline">\(B\)</span>が互いに排反である時<span class="math inline">\(P(A \cup B) = P(A) + P(B)\)</span></li>
+</ol>
+</body>
+</html>

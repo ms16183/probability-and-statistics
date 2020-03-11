@@ -1,4 +1,4 @@
-options= -s --toc --mathjax --metadata title="Statistics"
+options= -s --toc --mathjax --metadata title="確率・統計"
 
 index.html: *-*.md
 	pandoc $(options) -o index.html *-*.md
